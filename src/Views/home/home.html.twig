@@ -1,0 +1,26 @@
+{% extends 'layout/mainlayout.html.twig' %}
+
+{% block headercontent %}
+    <h1>TR::Home</h1>
+{% endblock %}
+
+{% block bodycontent %}
+    <article>
+        <h2>Welcome</h2>
+        <h3><label class="label label-primary">Home page de l'appli "trains-trains" (TR)</label></h3>
+        <br />
+        <p>La vocation de l'appli est de traiter la constitution des rames de trains. Elle ne détient pas
+            les matériels, qui sont gérés par l'appli "trains-rollingstock" (RS). Communication via AMQP (rabbitMq)
+            entre
+            les applis. Utilisation de bases rapprochées.</p>
+        <ul class="list-group">
+            <li class="list-group-item">RS envoie un msg lors de la création de matériels, qui est lu par TR pour
+                alimentation de sa bdd tactique
+            </li>
+            <li class="list-group-item">TR envoie un msg lors de l'utilisation de matériel dans la constitution de
+                trains
+            </li>
+        </ul>
+        </ul>
+    </article>
+{% endblock %}

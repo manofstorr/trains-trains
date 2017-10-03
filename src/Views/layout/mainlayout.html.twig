@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="{{ asset('lib/bootstrap/css/bootstrap.css') }}" rel="stylesheet"/>
+    <title>Trains-TR :: {% block titlecontent %}{% endblock %}</title>
+</head>
+<body>
+<div class="container">
+   {% include 'layout/navbar.html.twig' %}
+    <header>
+        {% block headercontent %}{% endblock %}
+    </header>
+    {% block bodycontent %}{% endblock %}
+</div>
+<div class="container">
+    <footer class="footer">
+        manOfStorr
+    </footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
