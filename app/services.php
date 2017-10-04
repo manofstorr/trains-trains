@@ -4,7 +4,7 @@
 
 /* sample :
 $app['model.locomotiveType'] = function ($app) {
-    return new trains\Model\Locomotive\LocomotiveTypeModel($app['db']);
+    return new Trains\Model\Locomotive\LocomotiveTypeModel($app['db']);
 };
 */
 

@@ -2,7 +2,7 @@
 
 
 // Home page
-$app->get('/', "trains\Controller\HomeController::indexAction")
+$app->get('/', "Trains\Controller\HomeController::indexAction")
     ->bind('home');
 
 

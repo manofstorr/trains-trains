@@ -11,11 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "trains\\Views\\": "src/Views",
-      "trains\\Model\\": "src/Model",
-      "trains\\Entity\\": "src/Entity",
-      "trains\\Controller\\": "src/Controller",
-      "trains\\Metier\\": "src/Metier"
+      "Trains\\": "src/"
     }
   }
 }
